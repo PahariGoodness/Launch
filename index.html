@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Pahari Goodness — Pure Himalayan Products</title>
+  <meta name="description" content="Small-batch, honest Himalayan products. Order on WhatsApp while our full website is coming soon.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header (no center menu) -->
+  <header class="site-header" data-scrolled="false">
+  <div class="container header__row">
+    <a class="brand" href="#top">
+  <img src="images/logo.png" alt="Pahari Goodness Logo" class="brand__logo-img" />
+  <div class="brand__name">Pahari Goodness</div>
+</a>
+  </div>
+</header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section
+      class="hero hero--immersive"
+      data-bg-desktop="images/hero.jpg"
+      data-bg-mobile="images/hero.jpg"
+    >
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">NATURE’S WISDOM FROM HIMALAYAN PEAKS</p>
+        <h1 class="hero__title">Pahari<br/>Goodness</h1>
+        <p class="hero__subtitle">
+          Pure, nutrient-rich, time-tested. Nothing added, nothing lost.
+        </p>
+
+        <div class="hero__cta">
+          <a id="ctaHero" class="btn btn--gold btn--lg" href="#" target="_blank" rel="noopener">
+            <span class="icon icon--wa" aria-hidden="true" color="#3f3f3f"></span>
+            Shop on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+      <div class="container">
+        <h2 class="section__title">Our Products</h2>
+
+        <!-- One list that behaves as a horizontal rail on mobile and a grid on desktop -->
+        <ul id="productRail" class="rail-grid" aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <!-- Coming soon band -->
+    <section id="coming" class="coming-band">
+      <div class="container">
+        <div class="coming-card">
+          <h3>Full website coming soon</h3>
+          <p>We’re polishing a complete experience with secure checkout, order tracking, and more.</p>
+          <a id="ctaWhatsAppMid" class="btn btn--gold btn--lg" href="#" target="_blank" rel="noopener">
+            Shop on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="socials">
+        <a id="linkInsta" href="#" target="_blank" rel="noopener" aria-label="Instagram" class="socials__link">
+          <span class="icon icon--insta" aria-hidden="true"></span>
+        </a>
+        <a id="linkWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp" class="socials__link">
+          <span class="icon icon--wa" aria-hidden="true"></span>
+        </a>
+        <a id="linkMail" href="#" aria-label="Email" class="socials__link">
+          <span class="icon icon--mail" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="footer__copy">
+        © <span id="year"></span> Pahari Goodness · Crafted in the Himalayas
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
