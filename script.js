@@ -1,33 +1,37 @@
 /** CONTACT — set these */
 const CONTACT = {
-  whatsappPhone: '919876543210', // country code + number (no +, no spaces)
+  whatsappPhone: '918091399907', // country code + number (no +, no spaces)
   email: 'hello@paharigoodness.in',
-  instagram: 'your_handle',
+  instagram: 'pahari_goodness',
 };
 
 /** 13 products for launch */
 const PRODUCTS = [
-  { id:'p1',  name:'Himalayan Sun Dried Apricots', tagline:'Rich in Vitamin A for eye health', price:550, image:'images/walnut.jpg' },
-  { id:'p2',  name:'Walnut Oil – 100% Cold Pressed', tagline:'Vit A & E rich, light absorbing elixir', price:720, image:'images/walnut.jpg' },
-  { id:'p3',  name:'Apricot Oil – 100% Cold Pressed', tagline:'Omega 3 powerhouse for a healthy heart', price:800, image:'images/walnut.jpg' },
-  { id:'p4',  name:'Himalayan Pine Nuts', tagline:'Richest source of pinolenic acid for weight management', price:920, image:'images/walnut.jpg' },
-  { id:'p5',  name:'Mamra Almonds', tagline:'2× MUFA & PUFA (Omega 6 & 9) for brain power', price:720, image:'images/walnut.jpg' },
-  { id:'p6',  name:'Gurbandi Almonds', tagline:'60% more heart-healthy fats', price:520, image:'images/walnut.jpg' },
-  { id:'p7',  name:'Walnuts', tagline:'Omega 3 powerhouse for healthy heart', price:550, image:'images/walnut.jpg' },
-  { id:'p8',  name:'Gurbandi Almond Oil – 100% Cold Pressed', tagline:'Vitamin E, Omega 6 & 9 — Fuel for brain', price:800, image:'images/walnut.jpg' },
-  { id:'p9',  name:'Apple Blossom Honey', tagline:'Contains natural enzymes, bee pollen & propolis', price:550, image:'images/walnut.jpg' },
-  { id:'p10', name:'Kinnauri Kala Shahi Jeera', tagline:'Rich in essential oils for medicinal & culinary use', price:350, image:'images/walnut.jpg' },
-  { id:'p11', name:'Morels', tagline:'Rich in Vitamin D for bone health', price:850, image:'images/walnut.jpg' },
-  { id:'p12', name:'Powerhouse Trail Mix', tagline:'One mix. Three supernuts. Brain, heart & energy boost', price:900, image:'images/walnut.jpg' },
-  { id:'p13', name:'Himalayan Forest Honey', tagline:'2× antioxidants for immunity boost', price:600, image:'images/walnut.jpg' }
+{ id:'p1',  name:'Himalayan Pine Nuts', tagline:'Appetite Control & Energy Boost — Pure Himalayan Fuel for Active Lives', price:920, image:'images/pin nuts.jpg' },
+{ id:'p2',  name:'Apricot Oil – 100% Cold Pressed', tagline:'Gentle Yet Powerful — Soothes, Heals, and Protects Sensitive Skin', price:800, image:'images/oil.png' },
+{ id:'p3',  name:'Walnuts', tagline:'Pure Mountain Nutrition — Protein, Fiber & Minerals for Energy & Vitality', price:550, image:'images/walnut.jpg' },
+{ id:'p4', name:'Kinnauri Kala Shahi Jeera', tagline:'Kinnaur’s High-Altitude Jewel — Boosts Focus, Energy & Metabolism', price:350, image:'images/jira.png' }
+//   { id:'p1',  name:'Himalayan Sun Dried Apricots', tagline:'Rich in Vitamin A for eye health', price:550, image:'images/walnut.jpg' },
+//   { id:'p2',  name:'Walnut Oil – 100% Cold Pressed', tagline:'Vit A & E rich, light absorbing elixir', price:720, image:'images/walnut.jpg' },
+//   { id:'p3',  name:'Apricot Oil – 100% Cold Pressed', tagline:'Omega 3 powerhouse for a healthy heart', price:800, image:'images/walnut.jpg' },
+//   { id:'p4',  name:'Himalayan Pine Nuts', tagline:'Richest source of pinolenic acid for weight management', price:920, image:'images/walnut.jpg' },
+//   { id:'p5',  name:'Mamra Almonds', tagline:'2× MUFA & PUFA (Omega 6 & 9) for brain power', price:720, image:'images/walnut.jpg' },
+//   { id:'p6',  name:'Gurbandi Almonds', tagline:'60% more heart-healthy fats', price:520, image:'images/walnut.jpg' },
+//   { id:'p7',  name:'Walnuts', tagline:'Omega 3 powerhouse for healthy heart', price:550, image:'images/walnut.jpg' },
+//   { id:'p8',  name:'Gurbandi Almond Oil – 100% Cold Pressed', tagline:'Vitamin E, Omega 6 & 9 — Fuel for brain', price:800, image:'images/walnut.jpg' },
+//   { id:'p9',  name:'Apple Blossom Honey', tagline:'Contains natural enzymes, bee pollen & propolis', price:550, image:'images/walnut.jpg' },
+//   { id:'p10', name:'Kinnauri Kala Shahi Jeera', tagline:'Rich in essential oils for medicinal & culinary use', price:350, image:'images/walnut.jpg' },
+//   { id:'p11', name:'Morels', tagline:'Rich in Vitamin D for bone health', price:850, image:'images/walnut.jpg' },
+//   { id:'p12', name:'Powerhouse Trail Mix', tagline:'One mix. Three supernuts. Brain, heart & energy boost', price:900, image:'images/walnut.jpg' },
+//   { id:'p13', name:'Himalayan Forest Honey', tagline:'2× antioxidants for immunity boost', price:600, image:'images/walnut.jpg' }
 ];
 
 
 /** Helpers */
 const waLink = (name) => {
   const text = name
-    ? `Hi! I want to buy "${name}" from Pahari Goodness. Please share price, pack sizes, and delivery details.`
-    : `Hi! I'm interested in Pahari Goodness products. Please share the catalog and prices.`;
+    ? `Hello! Can you tell me more about the "${name}"? I’d love to know the price and availability.`
+    : `Hi! I’d love to check out Pahari Goodness products. Please share the catalog and prices.`;
   return `https://wa.me/${CONTACT.whatsappPhone}?text=${encodeURIComponent(text)}`;
 };
 const escapeHtml = (s='') => s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'","&#039;");
