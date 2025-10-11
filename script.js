@@ -1,7 +1,7 @@
 /** CONTACT — set these */
 const CONTACT = {
   whatsappPhone: '918091399907', // country code + number (no +, no spaces)
-  email: 'hello@paharigoodness.in',
+  email: 'info@paharigoodness.com',
   instagram: 'pahari_goodness',
 };
 
@@ -103,4 +103,5 @@ document.addEventListener('DOMContentLoaded', () => {
   onScroll();
   window.addEventListener('scroll', onScroll);
 });
+
 
