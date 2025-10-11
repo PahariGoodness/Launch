@@ -10,7 +10,7 @@ const PRODUCTS = [
 { id:'p1',  name:'Himalayan Pine Nuts', tagline:'Appetite Control & Energy Boost — Pure Himalayan Fuel for Active Lives', price:920, image:'images/pin nuts.jpg' },
 { id:'p2',  name:'Apricot Oil – 100% Cold Pressed', tagline:'Gentle Yet Powerful — Soothes, Heals, and Protects Sensitive Skin', price:800, image:'images/oil.png' },
 { id:'p3',  name:'Walnuts', tagline:'Pure Mountain Nutrition — Protein, Fiber & Minerals for Energy & Vitality', price:550, image:'images/walnut.jpg' },
-{ id:'p4', name:'Kinnauri Kala Shahi Jeera', tagline:'Kinnaur’s High-Altitude Jewel — Boosts Focus, Energy & Metabolism', price:350, image:'images/jira.png' }
+{ id:'p4', name:'Kinnauri Kala Shahi Jeera', tagline:'Kinnaur’s High-Altitude Jewel — Boosts Focus, Energy & Metabolism', price:350, image:'images/jira.jpg' }
 //   { id:'p1',  name:'Himalayan Sun Dried Apricots', tagline:'Rich in Vitamin A for eye health', price:550, image:'images/walnut.jpg' },
 //   { id:'p2',  name:'Walnut Oil – 100% Cold Pressed', tagline:'Vit A & E rich, light absorbing elixir', price:720, image:'images/walnut.jpg' },
 //   { id:'p3',  name:'Apricot Oil – 100% Cold Pressed', tagline:'Omega 3 powerhouse for a healthy heart', price:800, image:'images/walnut.jpg' },
@@ -103,5 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
   onScroll();
   window.addEventListener('scroll', onScroll);
 });
+
 
 
