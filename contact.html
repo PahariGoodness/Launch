@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact Us – Pahari Goodness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" data-scrolled="true">
+    <div class="container header__row">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" class="brand__logo-img" />
+        <div class="brand__name">Pahari Goodness</div>
+      </a>
+      <nav class="primary-nav">
+        <ul>
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page contact-page">
+  <!-- Title + subcopy -->
+  <section class="container contact-header">
+    <h1>Contact us</h1>
+    <p>We’d love to help you pick the right Himalayan products.</p>
+  </section>
+
+  <!-- 3 cards: Email / Phone / WhatsApp -->
+  <section class="container">
+    <div class="contact-grid">
+      <a id="contactEmail" class="contact-card" href="mailto:info@paharigoodness.com">
+        <span class="cc-icon cc-mail" aria-hidden="true"></span>
+        <div>
+          <h3>Email</h3>
+          <p class="muted" id="contactEmailText">info@paharigoodness.com</p>
+        </div>
+      </a>
+
+      <a id="contactPhone" class="contact-card" href="tel:+918091399907">
+        <span class="cc-icon cc-phone" aria-hidden="true"></span>
+        <div>
+          <h3>Phone</h3>
+          <p class="muted" id="contactPhoneText">+91-8091399907</p>
+        </div>
+      </a>
+
+      <a id="contactWhatsApp" class="contact-card" href="https://wa.me/c/918091399907" target="_blank" rel="noopener">
+        <span class="cc-icon cc-wa" aria-hidden="true"></span>
+        <div>
+          <h3>WhatsApp</h3>
+          <p class="muted">Chat with us on WhatsApp</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Policies (same visual style) -->
+  <section class="container policies-block">
+    <h2>Policies & Legal</h2>
+    <div class="policy-grid">
+      <a class="policy-card" href="policies/privacy-policy.pdf" target="_blank" rel="noopener">
+        <span class="pc-dot"></span>
+        <div>
+          <h4>Privacy Policy</h4>
+          <p class="muted">How we protect your data.</p>
+        </div>
+      </a>
+
+      <a class="policy-card" href="policies/shipping-return-policy.pdf" target="_blank" rel="noopener">
+        <span class="pc-dot"></span>
+        <div>
+          <h4>Shipping & Returns</h4>
+          <p class="muted">Dispatch, delivery timelines, and easy returns.</p>
+        </div>
+      </a>
+
+      <a class="policy-card" href="policies/terms-and-conditions.pdf" target="_blank" rel="noopener">
+        <span class="pc-dot"></span>
+        <div>
+          <h4>Terms & Conditions</h4>
+          <p class="muted">Your use of our products and website.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="socials">
+        <a href="https://instagram.com/your_handle" target="_blank" class="socials__link"><span class="icon icon--insta"></span></a>
+        <a href="https://wa.me/919876543210" target="_blank" class="socials__link"><span class="icon icon--wa"></span></a>
+        <a href="mailto:hello@paharigoodness.in" class="socials__link"><span class="icon icon--mail"></span></a>
+      </div>
+      <div class="footer__copy">
+        © <span id="year"></span> Pahari Goodness · Crafted in the Himalayas
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
