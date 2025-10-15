@@ -1,6 +1,8 @@
 /** CONTACT — set these */
 const CONTACT = {
   whatsappPhone: '918091399907', // country code + number (no +, no spaces)
+  phoneDial: '918091399907',       // tel: link (no +, no spaces)
+  phoneDisplay: '+91-98091-43210', // what to show on the page
   email: 'info@paharigoodness.com',
   instagram: 'pahari_goodness',
 };
@@ -10,7 +12,7 @@ const PRODUCTS = [
 { id:'p1',  name:'Himalayan Pine Nuts', tagline:'Appetite Control & Energy Boost — Pure Himalayan Fuel for Active Lives', price:920, image:'images/pin nuts.jpg' },
 { id:'p2',  name:'Apricot Oil – 100% Cold Pressed', tagline:'Gentle Yet Powerful — Soothes, Heals, and Protects Sensitive Skin', price:800, image:'images/oil.png' },
 { id:'p3',  name:'Walnuts', tagline:'Pure Mountain Nutrition — Protein, Fiber & Minerals for Energy & Vitality', price:550, image:'images/walnut.jpg' },
-{ id:'p4', name:'Kinnauri Kala Shahi Jeera', tagline:'Kinnaur’s High-Altitude Jewel — Boosts Focus, Energy & Metabolism', price:350, image:'images/jira.jpg' }
+{ id:'p4', name:'Kinnauri Kala Shahi Jeera', tagline:'Kinnaur’s High-Altitude Jewel — Boosts Focus, Energy & Metabolism', price:350, image:'images/jira.png' }
 //   { id:'p1',  name:'Himalayan Sun Dried Apricots', tagline:'Rich in Vitamin A for eye health', price:550, image:'images/walnut.jpg' },
 //   { id:'p2',  name:'Walnut Oil – 100% Cold Pressed', tagline:'Vit A & E rich, light absorbing elixir', price:720, image:'images/walnut.jpg' },
 //   { id:'p3',  name:'Apricot Oil – 100% Cold Pressed', tagline:'Omega 3 powerhouse for a healthy heart', price:800, image:'images/walnut.jpg' },
@@ -59,6 +61,32 @@ document.addEventListener('DOMContentLoaded', () => {
   if (lw) lw.href = waLink();
   if (lm) lm.href = `mailto:${CONTACT.email}`;
 
+  const aboutVid = document.getElementById('aboutHeroVideo');
+  if (aboutVid) {
+    const setRate = () => { try { aboutVid.playbackRate = 3.0; } catch (e) {} };
+    aboutVid.addEventListener('canplay', setRate);
+    setRate();
+  }
+
+
+  // Contact page fields (if present)
+  const elEmail  = document.getElementById('contactEmail');
+  const elEmailT = document.getElementById('contactEmailText');
+  const elPhone  = document.getElementById('contactPhone');
+  const elPhoneT = document.getElementById('contactPhoneText');
+  const elWa     = document.getElementById('contactWhatsApp');
+
+  if (elEmail)  elEmail.href  = `mailto:${CONTACT.email}`;
+  if (elEmailT) elEmailT.textContent = CONTACT.email;
+
+  if (elPhone)  elPhone.href  = `tel:+${CONTACT.phoneDial}`;
+  if (elPhoneT) elPhoneT.textContent = CONTACT.phoneDisplay;
+
+  if (elWa)     elWa.href     = waLink(); // prefilled WA message from your helper
+
+  const ctaAbout = document.getElementById('ctaAboutWhatsApp');
+  if (ctaAbout) ctaAbout.href = waLink();
+
   // render products
   const rail = document.getElementById('productRail');
   if (rail) {
@@ -103,6 +131,4 @@ document.addEventListener('DOMContentLoaded', () => {
   onScroll();
   window.addEventListener('scroll', onScroll);
 });
-
-
 
