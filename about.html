@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>About Us – Pahari Goodness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- same header include -->
+  <header class="site-header" data-scrolled="true">
+    <div class="container header__row">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Logo" class="brand__logo-img" />
+        <div class="brand__name">Pahari Goodness</div>
+      </a>
+      <nav class="primary-nav" aria-label="Main">
+        <ul>
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page about-page">
+  <section class="container about-header">
+    <h1>About Us</h1>
+    <p class="subtitle">Take a little part of the Himalayas with you wherever you go.</p>
+  </section>
+
+  <!-- Our Story (image removed; full-width copy) -->
+  <section class="container about-story">
+    <div class="story-grid only-copy">
+      <div class="story-content">
+        <h2>Our Story</h2>
+        <p>
+          Pahari Goodness was founded by two sisters who grew up in the pristine,
+          snow-clad Himalayas, where nature thrives in its purest form. The mountains
+          shaped our values, teaching us simplicity, authenticity, and the deep connection
+          between people and nature.
+        </p>
+        <p>
+          An ode to the Himalayas, Pahari Goodness is born from the hearts of those raised
+          in its embrace. But life led us away—into cities where the rhythm of the mountains
+          became a distant memory. Yet, no matter how far we went, the Himalayas remained within us.
+        </p>
+        <p>
+          Those who had once stood beneath its towering peaks or wandered through its quiet valleys
+          carried the same longing—a deep craving for its purity and warmth. This longing gave birth
+          to Pahari Goodness—a way to bring the untouched gifts of the Himalayas to those who cherish them.
+        </p>
+        <p>
+          Every jar, every product is crafted from centuries of wisdom, enriched by time-honored
+          traditions, and powered by the purity of the rarest Himalayan ingredients.
+        </p>
+        <blockquote>
+          <em>“Take a little part of the Himalayas with you wherever you go.”</em>
+        </blockquote>
+      </div>
+    </div>
+
+  <!-- Snow-covered Himalayan mountains — now a looping video -->
+  <section class="banner-section banner-video">
+    <video
+      id="aboutHeroVideo"
+      class="banner-video__media"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="images/hero.jpg"
+    >
+      <source src="images/hero_v.mp4" type="video/mp4" />
+      <!-- Optional fallback -->
+      <!-- <source src="videos/about-hero-2.webm" type="video/webm" /> -->
+    </video>
+  </section>
+</section>
+</main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="socials">
+        <a href="https://instagram.com/your_handle" target="_blank" class="socials__link"><span class="icon icon--insta"></span></a>
+        <a href="https://wa.me/919876543210" target="_blank" class="socials__link"><span class="icon icon--wa"></span></a>
+        <a href="mailto:hello@paharigoodness.in" class="socials__link"><span class="icon icon--mail"></span></a>
+      </div>
+      <div class="footer__copy">
+        © <span id="year"></span> Pahari Goodness · Crafted in the Himalayas
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
